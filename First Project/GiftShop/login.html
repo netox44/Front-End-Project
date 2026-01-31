@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Style/Style.css">
+  <link rel="stylesheet" href="style/login.css">
+
+</head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="background"></div>
+  <header class=" navbar navbar1 navbar-expand-lg py-3">
+    <div class="container">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="Images/logo_gs-removebg-preview (2)-min.png" alt="gift shop Logo" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="track-order.html">Track Order</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact US</a>
+          </li>
+          <li>
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+          <li>
+            <a class="nav-link" href="login.html">Log In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+
+  <br><br><br>
+  <div class="container">
+    <section class="wrapper">
+      <div class="form signup">
+        <header>Signup</header>
+        <form id="signupForm">
+          <input type="text" id="fullName" placeholder="Full name" required />
+          <input type="email" id="email" placeholder="Email address" required />
+          <input type="password" id="password" placeholder="Password" required />
+          <div class="checkbox">
+            <input type="checkbox" id="terms" />
+            <label for="terms">I accept all terms & conditions</label>
+          </div>
+          <input type="button" id="signupButton" value="Signup" />
+        </form>
+      </div>
+
+      <div class="form login">
+        <header>Login</header>
+        <form id="loginForm">
+          <input type="email" id="loginEmail" placeholder="Email address" required />
+          <input type="password" id="loginPassword" placeholder="Password" required />
+          <a href="./forgotps.html">Forgot password?</a>
+          <input type="button" id="loginButton" value="login" />
+        </form>
+      </div>
+    </section>
+  </div>
+  <script src="Script/login.js"></script>
+
+
+  <br><br>
+</body>
+
+</html>

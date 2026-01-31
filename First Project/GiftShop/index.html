@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiftShop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/Style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/cards.css">
+    
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+    <!-- Navbar -->
+    <header class=" navbar navbar1 navbar-expand-lg py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <img src="Images/logo_gs-removebg-preview (2)-min.png" alt="gift shop Logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="track-order.html">Track Order</a>
+                    </li>
+                    <li class="nav-item contact-us">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        <div class="dropdown-arrow"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Carousel Section -->
+     <!-- Carousel Section -->
+     <div id="carouselExample" class="carousel slide mx-auto my-4" data-bs-ride="carousel" data-bs-interval="2000" style="max-width: 1000px;">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active" style="height: 500px;">
+                <img src="./Images/perf.jpg" alt="Fourth Slide" >
+                <div class="carousel-caption rounded p-3" style="background: rgba(0,0,0,0.5);">
+                    <h3>Perfumes</h3>
+                    <p>Here you can get Fragnances for your loved ones.</p>
+                </div>
+            </div>  
+
+            <!-- Second Slide -->
+            <div class="carousel-item" style="height: 500px;">
+                <img src="./Images/valentine gift.jpg" alt="Second Slide" >
+                <div class="carousel-caption rounded p-3" style="background: rgba(0,0,0,0.5);">
+                    <h3>Valentine Special</h3>
+                    <p>Our beautiful items for valentines.</p>
+                </div>
+            </div> 
+            
+
+            <!-- Third Slide -->
+            <div class="carousel-item" style="height: 500px;">
+                <img src="./Images/flower2.webp" alt="Third Slide" >
+                <div class="carousel-caption rounded p-3" style="background: rgba(0,0,0,0.5);">
+                    <h3>Flowers</h3>
+                    <p>Here you can get some flowers for your loved ones.</p>
+                </div>
+            </div>
+            
+            <!-- fourth slide -->
+            <div class="carousel-item" style="height: 500px;">
+                <img src="./Images/cake2-min.jpg" alt="First Slide" >
+                <div class="carousel-caption rounded p-3" style="background: rgba(0,0,0,0.5);">
+                    <h3>Birthday Deal</h3>
+                    <p>Try our Birthday Special Deals.</p>
+                </div>
+            </div>
+        
+            <!-- fifth slide -->
+            <div class="carousel-item " style="height: 500px;">
+                <img src="./Images/Hbdaycake.webp" alt="Fifth Slide">
+                <div class="carousel-caption rounded p-3" style="background: rgba(0,0,0,0.5);">
+                    <h3>Cakes</h3>
+                    <p>Here you can find some cakes as a gift.</p>
+                </div>
+            </div>
+            
+            <!-- sixth slide -->
+            <div class="carousel-item" style="height: 500px;">
+                <img src="./Images/chocolate 3-min.jpg" alt="sixth Slide" >
+                <div class="carousel-caption rounded p-3" style="background: rgba(0,0,0,0.5);">
+                    <h3>Chocolates</h3>
+                    <p>Here you can buy some Chocolates</p>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <!-- Navigation buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    
+
+    <div class="container my-4">
+        <div class="text-center">
+            <div class="btn-group" role="group" aria-label="Filter buttons">
+                <button type="button" class="btn btn-outline-secondary filter-btn" data-filter="all">All</button>
+                <button type="button" class="btn btn-outline-primary filter-btn" data-filter="chocolates">Chocolates</button>
+                <button type="button" class="btn btn-outline-primary filter-btn" data-filter="flowers">Flowers</button>
+                <button type="button" class="btn btn-outline-primary filter-btn" data-filter="cake">Cake</button>
+                <button type="button" class="btn btn-outline-primary filter-btn" data-filter="perfumes">Perfume</button>
+                <button type="button" class="btn btn-outline-primary filter-btn" data-filter="Valentine">Valentine Special</button>
+                <button type="button" class="btn btn-outline-primary filter-btn" data-filter="BirthdayDeal">Birthday Special</button>
+            </div>
+        </div>
+    </div>
+
+
+  
+    <div class="container">
+        <div class="row text-center">
+    
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="BirthdayDeal">
+                    <img src="./Images/bdaygift.jpg" class="card-img-top" alt="Bday Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Birthday Special</h2>
+                        <p class="product-card__description">Complete Birthday deal.</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$80.99</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="BirthdayDeal">
+                    <img src="./Images/bdaygift3.jpg" class="card-img-top" alt="Bday Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Birthday Special</h2>
+                        <p class="product-card__description">Birthday Deal with some surprise gifts</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$30.00</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="BirthdayDeal">
+                    <img src="./Images/Hbdaycake.webp" class="card-img-top" alt="Bday Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Birthday Special</h2>
+                        <p class="product-card__description">Try our premium Birthday cake.</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$45.99</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="Valentine">
+                    <img src="./Images/val2.webp" class="card-img-top" alt="val Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Valentine Special</h2>
+                        <p class="product-card__description">Complete Gift for a women.</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$40.00</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="Valentine">
+                    <img src="./Images/val4.jpg" class="card-img-top" alt="val Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Valentine Special</h2>
+                        <p class="product-card__description">Try Some Sweets with your loved one</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$25.00</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="Valentine">
+                    <img src="./Images/valentine gift.jpg" class="card-img-top" alt="val Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Valentine Special</h2>
+                        <p class="product-card__description">Branded Diorr Perfume for womens</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$50.99</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="chocolates">
+                    <img src="./Images/chocolate2.jpg" class="card-img-top" alt="Chocolate Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Milky Chocolates</h2>
+                        <p class="product-card__description">Premium assorted chocolates for any occasion</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$10.00</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="chocolates">
+                    <img src="./Images/chocolate1.jpg" class="card-img-top" alt="Flower Bouquet">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Chocolate box</h2>
+                        <p class="product-card__description">Best as a Birthday gift</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$20.99</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+           
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="chocolates">
+                    <img src="./Images/chocolate3.webp" class="card-img-top" alt="Birthday Cake">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Luxury Chocolate Box</h2>
+                        <p class="product-card__description">Premium assorted chocolates perfect for any occasion</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$80.99</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="flowers">
+                    <img src="./Images/flower1.webp" class="card-img-top" alt="Chocolate Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Modern Rose envelope</h2>
+                        <p class="product-card__description">Natural rose envelope for your loved ones.</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$10.99</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="flowers">
+                    <img src="./Images/flower2.webp" class="card-img-top" alt="Chocolate Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Daisy Flower Bouquet</h2>
+                        <p class="product-card__description">Pure daisy flower bouquet perfect gift.</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$25.00</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="flowers">
+                    <img src="./Images/flower3.jpg" class="card-img-top" alt="Chocolate Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Artficial Flower Bouquet</h2>
+                        <p class="product-card__description">Premium artificial flower bouquet.</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$20.99</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="cake">
+                    <img src="Images/cakestr.webp" class="card-img-top" alt="Chocolate Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Flourless Strawberry cake</h2>
+                        <p class="product-card__description">Delicious cake, Perfect for birthday parties.</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$30.99</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="cake">
+                    <img src="./Images/cake4-min.jpg" class="card-img-top" alt="Chocolate Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Fruit Mud cake</h2>
+                        <p class="product-card__description">Tastes Fantastic, Perfect for kids.</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$18.99</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="cake">
+                    <img src="./Images/icecake.jpeg" class="card-img-top" alt="Chocolate Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">IceCake</h2>
+                        <p class="product-card__description">Wonderful tasting cake .</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$40.00</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="perfumes">
+                    <img src="./Images/perfume.jpg" class="card-img-top" alt="Chocolate Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Perfume (Men's Edition)</h2>
+                        <p class="product-card__description">long lasting fragnance for men.</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$60.00</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="perfumes">
+                    <img src="./Images/perfume1.webp" class="card-img-top" alt="Chocolate Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Perfume (Women's Edition)</h2>
+                        <p class="product-card__description">Perfect Gift for a Women.</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$40.00</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100" data-category="perfumes">
+                    <img src="./Images/bdm.webp" class="card-img-top" alt="Chocolate Gift 1">
+                    <div class="product-card__info">
+                        <h2 class="product-card__title">Body Mist</h2>
+                        <p class="product-card__description">Premium Assorted body mist.</p>
+                        <div class="product-card__price-row">
+                            <span class="product-card__price">$40.00</span>
+                            <button class="product-card__btn"><span>Add to Cart</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+</div>
+
+      
+    
+<div id="cartPopup" class="cart-popup">
+    <div class="cart-popup-content">
+        <span class="close-popup">&times;</span>
+        <h2>Shopping Cart</h2>
+        <div class="product-details">
+            <img id="popupProductImage" src="" alt="Product Image" class="popup-product-img">
+            <h3 id="popupProductTitle"></h3>
+            <p id="popupProductPrice"></p>
+        </div>
+        <div class="quantity-selector">
+            <label for="quantity">Quantity:</label>
+            <div class="quantity-controls">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" id="quantity" value="1" min="1" max="10">
+                <button class="quantity-btn plus">+</button>
+            </div>
+        </div>
+        <div class="total-section">
+            <h4>Total: $<span id="totalPrice">0.00</span></h4>
+        </div>
+        <button class="proceed-payment-btn">Proceed to Payment</button>
+    </div>
+</div>
+      
+    
+
+
+<div id="paymentPopup" class="payment-popup">
+    <div class="payment-popup-content">
+        <span class="close-payment">&times;</span>
+        <h2>Payment Details</h2>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="cardName">Cardholder Name</label>
+                <input type="text" id="cardName" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" required placeholder="1234 5678 9012 3456" maxlength="19">
+            </div>
+            <div class="form-row">
+                <div class="form-group half">
+                    <label for="expDate">Expiry Date</label>
+                    <input type="text" id="expDate" required placeholder="MM/YY" maxlength="5">
+                </div>
+                <div class="form-group half">
+                    <label for="cvv">CVV</label>
+                    <input type="password" id="cvv" required placeholder="123" maxlength="3">
+                </div>
+            </div>
+            <button type="submit" class="submit-payment-btn">Pay $<span id="finalAmount">0.00</span></button>
+        </form>
+    </div>
+</div>
+
+<!-- Loading Popup -->
+<div id="loadingPopup" class="loading-popup">
+    <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <h3>Processing Payment</h3>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <p class="countdown">Processing... <span id="timer">3</span>s</p>
+    </div>
+</div>
+
+<!-- Success Popup -->
+<div id="successPopup" class="success-popup">
+    <div class="success-content">
+        <div class="success-icon">✓</div>
+        <h2>Payment Successful!</h2>
+        <p>Your order has been placed successfully.</p>
+        <button class="back-to-home">Back to Home</button>
+    </div>
+</div>
+
+
+    <footer class="footer mt-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-3">About GiftShop</h5>
+                    <p class="text-muted">Your one-stop destination for thoughtful gifts. We specialize in cakes, chocolates, flowers, and custom gifts for all special occasions.</p>
+                    <div class="mt-3">
+                        <a href="#" class="social-icon bg-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon bg-info"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon bg-danger"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon bg-success"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about-us.html">About Us</a></li>
+                        <li class="mb-2"><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Customer Service</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="track-order.html">Track Order</a></li>
+                        <li class="mb-2"><a href="contact-us.html">Contact Us</a></li>
+                        <li class="mb-2"><a href="about-us.html">About Us</a></li>
+                        <li class="mb-2"><a href="shipping-policy.html">Shipping Policy</a></li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            123 Gift Street, Shopping City, 12345
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            +1 (234) 567-8900
+                        </li>
+                        <li class="mb-2 footer-links">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="https://mail.google.com">info@giftshop.com</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-clock me-2"></i>
+                            Mon - Sat: 9:00 AM - 8:00 PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-top py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <p class="mb-0">&copy; 2024 GiftShop. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <img src="./Images/mastercard.png" alt="Payment Methods" style="height: 30px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script src="./Script/script.js"></script>
+    <script src="./Script/cart.js"></script>    
+
+
+    
+    
+</body>
+</html>
